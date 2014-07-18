@@ -5,7 +5,7 @@ by Joseph LoManto
 
 A simple 2 player 3ds homebrew game.
 
-Just put shoot.3ds onto your Gateway SD Card and run it.
+Just put shoot.3ds from shoot/ onto your Gateway SD Card and run it.
 
 Controls:
 - Up/Down - move left player
