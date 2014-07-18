@@ -10,6 +10,7 @@ Controls:
 - L trigger - left player shoot
 - X/B - move right player
 - R trigger - right player shoot
+- Start - restart after game ends
 
 Projectiles cannot pass through either barrier.
 Barriers move independently.
