@@ -1,0 +1,30 @@
+﻿Build started 7/17/2014 8:29:15 PM.
+     1>Project "E:\prog\3ds\shoot\shoot\shoot.vcxproj" on node 2 (build target(s)).
+     1>Build:
+         make
+         arm-none-eabi-gcc -Wall -std=c99 -march=armv6 -O3 -I"e:/git/ctrulib/libctru/include" -I/c/devkitPro/libnds/include  -c image.c -o build/image.o
+         In file included from image.c:2:0:
+         e:/git/ctrulib/libctru/include/ctr/FS.h: In function 'FS_makePath':
+         e:/git/ctrulib/libctru/include/ctr/FS.h:36:2: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+           return (FS_path){type, strlen(path)+1, (u8*)path};
+           ^
+         e:/git/ctrulib/libctru/include/ctr/FS.h:36:25: warning: incompatible implicit declaration of built-in function 'strlen' [enabled by default]
+           return (FS_path){type, strlen(path)+1, (u8*)path};
+                                  ^
+         image.c: In function 'drawImage':
+         image.c:40:6: warning: unused variable 'img_width' [-Wunused-variable]
+           u32 img_width = pBmp->info.width;
+               ^
+         image.c: In function 'imageBankInit':
+         image.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+          }
+          ^
+         arm-none-eabi-gcc -T ccd00.ld -L"/c/devkitPro/devkitARM/arm-none-eabi/lib" -L"e:/git/ctrulib/libctru/lib" -o shoot.elf build/debug.o build/game.o build/image.o build/input.o build/main.o build/rect.o build/shooter.bmp.o build/winleft.bmp.o build/winright.bmp.o -lctru -lc -nostartfiles
+         make[1]: Entering directory `/e/prog/3ds/shoot/shoot'
+         c:/3dsdev/makerom -f cci -o shoot.3ds -rsf gw_workaround.rsf -target d -exefslogo -elf shoot.elf -icon shoot.icn -banner c:/3dsdev/banner.bin
+         make[1]: Leaving directory `/e/prog/3ds/shoot/shoot'
+     1>Done Building Project "E:\prog\3ds\shoot\shoot\shoot.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.65
