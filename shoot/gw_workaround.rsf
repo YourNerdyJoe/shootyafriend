@@ -1,7 +1,7 @@
 BasicInfo:
-  Title                   : "CtrApp"
+  Title                   : "Shoot"
   CompanyCode             : "00"
-  ProductCode             : "CTR-P-CTAP"
+  ProductCode             : "CTR-P-SHOT"
   ContentType             : Application
   Logo                    : Nintendo # Nintendo / Licensed / Distributed / iQue / iQueForSystem
 
@@ -11,7 +11,7 @@ Rom:
 
 
 TitleInfo:
-  UniqueId                : 0x6407
+  UniqueId                : 0x8407
   Category                : Application
   
 CardInfo:
